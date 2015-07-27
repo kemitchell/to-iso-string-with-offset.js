@@ -1,7 +1,7 @@
 {
   "name": "to-iso-string-with-offset",
   "description": "toISOString() with timezone offset, like `date --iso-8601=seconds`",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "devDependencies": {
     "tape": "~4.0.1"
