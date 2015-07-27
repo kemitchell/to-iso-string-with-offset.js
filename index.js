@@ -1,9 +1,20 @@
+function repeat(string, count) {
+  if (String.prototype.repeat) {
+    return string.repeat(count) }
+  else {
+    if (count === 1) {
+      return string }
+    else if (count === 2) {
+      return string + string }
+    else {
+      return new Array(count + 1).join(string) } } }
+
 function pad(number, length) {
   var string = number.toString()
   var stringLength = string.length 
   return (
     stringLength < length ?
-      ( new Array(length - stringLength + 1).join('0') + string ) :
+      repeat('0', length - stringLength) + string :
       string) }
 
 function toISOStringWithOffset(date) {
