@@ -1,13 +1,4 @@
-function repeat(string, count) {
-  if (String.prototype.repeat) {
-    return string.repeat(count) }
-  else {
-    if (count === 1) {
-      return string }
-    else if (count === 2) {
-      return string + string }
-    else {
-      return new Array(count + 1).join(string) } } }
+var repeat = require('string-repeat')
 
 function pad(number, length) {
   var string = number.toString()

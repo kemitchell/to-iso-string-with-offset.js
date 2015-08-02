@@ -3,6 +3,9 @@
   "description": "toISOString() with timezone offset, like `date --iso-8601=seconds`",
   "version": "1.0.1",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
+  "dependencies": {
+    "string-repeat": "^1.1.1"
+  },
   "devDependencies": {
     "tape": "~4.0.1"
   },
