@@ -17,7 +17,7 @@
   "license": "MIT",
   "repository": "kemitchell/to-iso-string-with-offset.js",
   "scripts": {
-    "test": "node test.js",
-    "lint": "standard"
+    "lint": "standard",
+    "test": "node test.js"
   }
 }
