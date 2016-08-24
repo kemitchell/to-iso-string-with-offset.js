@@ -1,11 +1,12 @@
 var child = require('child_process')
-var package = require('./package')
+var toISO = require('./')
+var assert = require('assert')
 
-require('tape')(package.name, function(test) {
-  var command = 'date --iso-8601=seconds'
-  test.plan(1)
-  child.exec(command, function(erorr, stdout, stderr) {
-    test.equal(
-      require('./')(new Date()),
-      stdout.toString().trim(),
-      'same as `' + command + '`') }) })
+var command = 'date --iso-8601=seconds'
+child.exec(command, function (error, stdout, stderr) {
+  assert.ifError(error)
+  assert.equal(
+    toISO(new Date()),
+    stdout.toString().trim()
+  )
+})
