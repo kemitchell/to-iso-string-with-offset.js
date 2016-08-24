@@ -9,6 +9,9 @@
   "devDependencies": {
     "standard": "^8.0.0"
   },
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "ISO-8601",
     "date",
